@@ -9,6 +9,8 @@ router.post('/user', usercontroller.store)
 
 router.put('/user/:id', usercontroller.update)
 
-router.delete('/user/:id', usercontroller.deleteV)
+router.delete('/user/:id', usercontroller.delete)
+
+router.get('/user/:id', usercontroller.show)
 
 module.exports = router
